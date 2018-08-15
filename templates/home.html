@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Lookup Time Comparison</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'test.css' %}">
 </head>
 <body>
     <h1>My first Django page. Woot! Woot!</h1>
+    <!--<img class="django-logo" src="https://cdn.freebiesupply.com/logos/thumbs/2x/django-logo.png" />-->
+    <img class="django-logo" src="{% static 'logoTwo.png' %}" />
 </body>
 </html>
