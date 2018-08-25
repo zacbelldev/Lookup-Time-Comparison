@@ -6,9 +6,10 @@ app_set = set(())
 app_list = []
 app_dictionary = {}
 
-print("\n---------------------------------------------------")
-print("\033[94mCoding Challenge:\033[0m\nCompare lookup times for set, list, and dictionary ")
-print("---------------------------------------------------")
+print("\n-----------------------------------------------------")
+print("\033[94mCoding Challenge:\033[0m"
+      "\nCompare lookup times for set, list, and dictionary ")
+print("-----------------------------------------------------")
 
 start_time = time.time()
 with open('AppleStore.csv') as csv_file:
@@ -17,10 +18,13 @@ with open('AppleStore.csv') as csv_file:
         app_list.append(row['track_name'])
         app_dictionary[row['size_bytes']] = row['track_name']
 
-# print("Set data: ", app_set)
-# print("List data: ", app_list)
-# print("Dictionary data: ", app_dictionary)
-print("\nElapsed time to initialize structures \nwith 11,000 rows of data:\n\033[92m{:.10f}s\033[0m".format(time.time() - start_time))
+print("\nElapsed time to initialize structures "
+      "\nwith 11,000 rows of data:"
+      "\n\033[92m{:.10f}s\033[0m".format(time.time() - start_time))
+
+print("\nSet data: ", app_set)
+print("List data: ", app_list)
+print("Dictionary data: ", app_dictionary)
 
 # ASK FOR USER INPUT
 n = str(input("\nSearch for an app by name: "))
