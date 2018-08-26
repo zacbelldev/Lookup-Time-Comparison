@@ -60,3 +60,38 @@ print("Dictionary Lookup Time: \033[92m{:.10f}s\033[0m".format(dict_time))
 
 print("\nSlowest Time:           \033[92m{:.10f}s\033[0m".format(max(set_time, list_time, dict_time)))
 print("Fastest Time:           \033[92m{:.10f}s\033[0m".format(min(set_time, list_time, dict_time)))
+
+
+"""
+Output:
+
+
+
+-----------------------------------------------------
+Coding Challenge:
+Compare lookup times for set, list, and dictionary 
+-----------------------------------------------------
+
+Elapsed time to initialize structures 
+with 11,000 rows of data:
+0.0780019760s
+
+Set data:  {'Evel Knievel', 'Seven - 7 Minute Workout Training Challenge', ...........
+List data:  ['PAC-MAN Premium', 'Evernote - stay organized', ...........
+Dictionary data:  {'100788224': 'PAC-MAN Premium', ...........
+
+Search for an app by name: Evernote - stay organized
+
+Set:                    Match found
+List:                   Match found
+Dictionary:             Match found
+
+Set Lookup Time:        0.0000369549s
+List Lookup Time:       0.0000150204s
+Dictionary Lookup Time: 0.0000109673s
+
+Slowest Time:           0.0000369549s
+Fastest Time:           0.0000109673s
+
+Process finished with exit code 0
+"""
